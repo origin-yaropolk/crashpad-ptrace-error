@@ -4,13 +4,11 @@
   "description": "crashpad error reptroduce",
   "main": "index.js",
   "scripts": {
-    "pack:snap": "electron-builder --config electron-builder.js --config.snap.grade=\"stable\" --config.snap.confinement=\"strict\" --linux snap --publish never",
-    "start": "electron ./src"
-  },
-  "dependencies": {
-    "electron": "~25.2.0"
+    "pack:snap": "electron-builder --config.snap.grade=\"stable\" --config.snap.confinement=\"strict\" --linux snap --publish never",
+    "start": "electron ."
   },
   "devDependencies": {
+    "electron": "~25.2.0",
     "electron-builder": "~23.0.9"
   }
 }
